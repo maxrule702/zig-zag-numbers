@@ -1,0 +1,32 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int numberlimt;
+        int lowerlimt = 1;
+        System.out.print("what number would you like to go up to?");
+        numberlimt = input.nextInt();
+        while (lowerlimt < numberlimt) {
+            int startPoint = 1;
+            while (startPoint < lowerlimt) {
+                System.out.print(startPoint);
+                startPoint++;
+            }
+            System.out.println(lowerlimt);
+            lowerlimt++;
+        }
+
+        while (lowerlimt > 0) {
+            int startPoint = 1;
+            while (startPoint < lowerlimt) {
+                System.out.print(startPoint);
+                startPoint++;
+
+            }
+            System.out.println(lowerlimt);
+            lowerlimt --;
+        }
+    }
+}
